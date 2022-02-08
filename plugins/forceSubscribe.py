@@ -25,7 +25,7 @@ def _onUnMuteRequest(client, cb):
             if cb.message.reply_to_message.from_user.id == user_id:
               cb.message.delete()
           except UserNotParticipant:
-            client.answer_callback_query(cb.id, text="❗ Join the mentioned 'channel' and press the 'UnMute Me' button again.", show_alert=True)
+            client.answer_callback_query(cb.id, text="❗ Join the mentioned 'channel' All movies are there and press the 'UnMute Me' button again. चैनल Subscribe करो मूवी वही है, फिर unmute  me बटन को दबाओ तभी मैसेज कर पाओगे ।", show_alert=True)
       else:
         client.answer_callback_query(cb.id, text="❗ You are muted by admins for other reasons.", show_alert=True)
     else:
